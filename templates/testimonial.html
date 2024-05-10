@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+<div class="container-fluid bg-primary py-5 mb-5 hero-header">
+    <div class="container py-5">
+        <div class="row justify-content-center py-5">
+            <div class="col-lg-10 pt-lg-5 mt-lg-5 text-center">
+                <h1 class="display-3 text-white animated slideInDown">Testimonial</h1>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb justify-content-center">
+                        <li class="breadcrumb-item"><a href="/">Home</a></li>
+                        <li class="breadcrumb-item text-white active" aria-current="page">Testimonial</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<!-- Navbar & Hero End -->
+
+<!-- Testimonial Start -->
+<div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+<div class="container">
+    <div class="text-center">
+        <h6 class="section-title bg-white text-center text-primary px-3">Testimonial</h6>
+        <h1 class="mb-5">Our Clients Say!!!</h1>
+    </div>
+    <div class="owl-carousel testimonial-carousel position-relative">
+        <div class="testimonial-item bg-white text-center border p-4">
+            <img class="bg-white rounded-circle shadow p-1 mx-auto mb-3" src="{% static 'img/testimonial-1.jpg' %}" style="width: 80px; height: 80px;">
+            <h5 class="mb-0">Joseph Jatelo</h5>
+            <p>Manaus, Brazil</p>
+            <p class="mb-0">"Unforgettable Safari Experience!"
+                "Our FreeAfrica Tours and Safaris adventure was nothing short of spectacular. From the thrilling wildlife encounters to the personalized service, every moment exceeded our expectations. The seamless online booking made it easy to choose, pay, and embark on our dream safari. A truly unforgettable experience—we can't wait to travel with FreeAfrica Tours again!"</p>
+        </div>
+        <div class="testimonial-item bg-white text-center border p-4">
+            <img class="bg-white rounded-circle shadow p-1 mx-auto mb-3" src="{% static 'img/testimonial-2.jpg' %}" style="width: 80px; height: 80px;">
+            <h5 class="mb-0">Greg Mtukutu</h5>
+            <p>Kuala Lampur, Malaysia</p>
+            <p class="mt-2 mb-0">"Exceptional Service and Unparalleled Adventures!"
+                "FreeAfrica Tours and Safaris delivered an exceptional travel experience. The easy online booking process allowed us to choose our preferred destination seamlessly. Paying online was secure and hassle-free. From there, our journey began—a perfect blend of thrilling safaris and cultural immersion. Thank you for making our adventure unforgettable!"</p>
+        </div>
+        <div class="testimonial-item bg-white text-center border p-4">
+            <img class="bg-white rounded-circle shadow p-1 mx-auto mb-3" src="{% static 'img/testimonial-3.jpg' %}" style="width: 80px; height: 80px;">
+            <h5 class="mb-0">Korne Wafacebook</h5>
+            <p>Kingston, Jamaica</p>
+            <p class="mt-2 mb-0"> "Effortless Booking, Unmatched Excitement!"
+                "Booking with FreeAfrica Tours was effortless. Choosing our dream destination was a joy, and the secure online payment system added a layer of convenience. What impressed us most was the ability to travel on the same day. FreeAfrica Tours turned our travel dreams into reality, and we can't wait for our next adventure!"</p>
+        </div>
+        <div class="testimonial-item bg-white text-center border p-4">
+            <img class="bg-white rounded-circle shadow p-1 mx-auto mb-3" src="{% static 'img/testimonial-4.jpg' %}" style="width: 80px; height: 80px;">
+            <h5 class="mb-0"> Shaddy Macocha</h5>
+            <p>Kampala, Uganda</p>
+            <p class="mt-2 mb-0"> </p>
+        </div>
+    </div>
+</div>
+</div>
+<!-- Testimonial End -->
+{% endblock content %}

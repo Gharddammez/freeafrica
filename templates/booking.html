@@ -1,0 +1,264 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block content %}
+<div class="container-fluid bg-primary py-5 mb-5 hero-header">
+    <div class="container py-5">
+        <div class="row justify-content-center py-5">
+            <div class="col-lg-10 pt-lg-5 mt-lg-5 text-center">
+                <h1 class="display-3 text-white animated slideInDown">Booking</h1>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb justify-content-center">
+                        <li class="breadcrumb-item"><a href="/">Home</a></li>
+                        <li class="breadcrumb-item text-white active" aria-current="page">Booking</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<!-- Navbar & Hero End -->
+
+<!-- Process Start -->
+<div class="container-xxl py-5">
+<div class="container">
+    <div class="text-center pb-4 wow fadeInUp" data-wow-delay="0.1s">
+        <h6 class="section-title bg-white text-center text-primary px-3">Process</h6>
+        <h1 class="mb-5">3 Easy Steps</h1>
+    </div>
+    <div class="row gy-5 gx-4 justify-content-center">
+        <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="position-relative border border-primary pt-5 pb-4 px-4">
+                <div class="d-inline-flex align-items-center justify-content-center bg-primary rounded-circle position-absolute top-0 start-50 translate-middle shadow"
+                    style="width: 100px; height: 100px;">
+                    <i class="fa fa-globe fa-3x text-white"></i>
+                </div>
+                <h5 class="mt-4">Choose A Destination</h5>
+                <hr class="w-25 mx-auto bg-primary mb-1">
+                <hr class="w-50 mx-auto bg-primary mt-0">
+                <p class="mb-0">Its your chance to dream!!Select your ideal adventure with FreeAfrica
+                    Tours—customize your safari, cultural immersion, or luxury escape in just a click</p>
+            </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="position-relative border border-primary pt-5 pb-4 px-4">
+                <div class="d-inline-flex align-items-center justify-content-center bg-primary rounded-circle position-absolute top-0 start-50 translate-middle shadow"
+                    style="width: 100px; height: 100px;">
+                    <i class="fa fa-dollar-sign fa-3x text-white"></i>
+                </div>
+                <h5 class="mt-4">Pay Online</h5>
+                <hr class="w-25 mx-auto bg-primary mb-1">
+                <hr class="w-50 mx-auto bg-primary mt-0">
+                <p class="mb-0">Experience transparent and secure online payment, ensuring a hassle-free
+                    process. Book with confidence for an instant confirmation.</p>
+            </div>
+        </div>
+        <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.5s">
+            <div class="position-relative border border-primary pt-5 pb-4 px-4">
+                <div class="d-inline-flex align-items-center justify-content-center bg-primary rounded-circle position-absolute top-0 start-50 translate-middle shadow"
+                    style="width: 100px; height: 100px;">
+                    <i class="fa fa-plane fa-3x text-white"></i>
+                </div>
+                <h5 class="mt-4">Travel Today</h5>
+                <hr class="w-25 mx-auto bg-primary mb-1">
+                <hr class="w-50 mx-auto bg-primary mt-0">
+                <p class="mb-0">Your African adventure begins instantly with FreeAfrica Tours. Choose, pay, and
+                    embark on your journey today. Book now for an unforgettable experience!</p>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<!-- Process Start -->
+
+<!-- Booking Start -->
+<div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+<div class="container"></div>
+<div class="booking p-5">
+    <div class="row g-5 align-items-center">
+        <div class="col-md-6 text-white">
+            <h6 class="text-white text-uppercase">Bookings & Resavations</h6>
+            <h1 class="text-white mb-4">Online Booking</h1>
+            <p class="mb-4">Plan your African adventure effortlessly with our user-friendly online booking
+                system. Customize your itinerary, secure your spot, and receive instant confirmation—all in just
+                a few clicks. Visit [YourWebsiteURL.com] and embark on your hassle-free journey today!</p>
+            <p class="mb-4">Experience stress-free planning with our secure online booking. Tailor your safari
+                or cultural immersion, enjoy transparent pricing, and book confidently with our encrypted
+                payment gateway. Your African escape is just a click away—visit our website now!</p>
+            <a class="btn btn-outline-light py-3 px-5 mt-2" href="">Read More</a>
+        </div>
+
+        <div id="booking" class="section">
+
+            <div class="booking-form">
+                <div class="form-header">
+                    <h1>Get your free Quote to book</h1>
+                </div>
+                <form>
+                    <div class="form-group">
+                        <input class="form-control" type="text" placeholder="Enter your name">
+                        <span class="form-label">Full Name</span>
+                    </div>
+
+                    <div class="form-group">
+                        <input class="form-control" type="text" placeholder="Country of origin,">
+                        <span class="form-label">Country</span>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input class="form-control" type="date" required>
+                                <span class="form-label">arrival</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input class="form-control" type="date" required>
+                                <span class="form-label">Depature</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <select class="form-control" required>
+                                    <option value selected hidden>no of rooms</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                </select>
+                                <span class="select-arrow"></span>
+                                <span class="form-label">Rooms</span>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <select class="form-control" required>
+                                    <option value selected hidden>no of adults</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                </select>
+                                <span class="select-arrow"></span>
+                                <span class="form-label">Adults</span>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <select class="form-control" required>
+                                    <option value selected hidden>no of children</option>
+                                    <option>0</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                </select>
+                                <span class="select-arrow"></span>
+                                <span class="form-label">Children</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <select class="form-control" required>
+                                    <option value selected hidden>no of rooms</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                </select>
+                                <span class="select-arrow"></span>
+                                <span class="form-label">Rooms</span>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <select class="form-control" required>
+                                    <option value selected hidden>no of adults</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                </select>
+                                <span class="select-arrow"></span>
+                                <span class="form-label">Adults</span>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <select class="form-control" required>
+                                    <option value selected hidden>no of children</option>
+                                    <option>0</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                </select>
+                                <span class="select-arrow"></span>
+                                <span class="form-label">Children</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <select class="form-control" required>
+                                    <option value selected hidden>no of rooms</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                </select>
+                                <span class="select-arrow"></span>
+                                <span class="form-label">Rooms</span>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <select class="form-control" required>
+                                    <option value selected hidden>no of adults</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                </select>
+                                <span class="select-arrow"></span>
+                                <span class="form-label">Adults</span>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <select class="form-control" required>
+                                    <option value selected hidden>no of children</option>
+                                    <option>0</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                </select>
+                                <span class="select-arrow"></span>
+                                <span class="form-label">Children</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input class="form-control" type="email" placeholder="Enter your Email">
+                                <span class="form-label">Email</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input class="form-control" type="tel" placeholder="Enter you Phone">
+                                <span class="form-label">Phone</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-btn">
+                        <button class="submit-btn">Book Now</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+{% endblock content %}
